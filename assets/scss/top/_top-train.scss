@@ -1,0 +1,90 @@
+.topTrain {
+  padding-bottom: 150px;
+
+  @include mq(md) {
+    padding-bottom: 75px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  &__box {
+    background-image: url(../img/train-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    text-align: center;
+    height: 500px;
+    width: 480px;
+    position: relative;
+
+    & + & {
+      background-image: url(../img/train-2.png);
+
+      @include mq(md) {
+        margin-top: 60px;
+      }
+
+      @include mq(sm) {
+        margin-top: 30px;
+      }
+    }
+
+    @include mq(md) {
+      margin: 0 auto;
+    }
+
+    @include mq(sm) {
+      width: 90vw;
+      height: 90vw;
+    }
+  }
+
+  &__inner {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    display: block;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq(md) {
+      width: 90%;
+      padding: 15px;
+    }
+  }
+
+  &__img {
+    width: 49px;
+    height: 49px;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 1;
+    margin-top: 10px;
+
+    &:after {
+      content: "";
+      display: block;
+      height: 3px;
+      width: 45px;
+      background: #333;
+      margin: 15px auto 0;
+    }
+  }
+
+  &__text {
+    margin-top: 20px;
+    text-align: left;
+  }
+}

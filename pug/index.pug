@@ -1,0 +1,127 @@
+- var path = "./";
+include ./_include/_head.pug
+  title The Night of the Milkey Way Train
+body
+  main
+    .topMainImg
+      .wrap
+        .topMainImg__content
+          h1.topMainImg__text.wow.fadeInUp
+            |The Night<br>
+            |of the<br>
+            |Milkey Way Train
+          a(href="#intro").topMainImg__button start
+    section.topIntro#intro
+      .wrap
+        h2.topIntro__title.wow.fadeInUp Kenji Miyazawa
+        .topIntro__content.wow.fadeInUp
+          .topIntro__imgBox
+            img(src=`${path}img/section-1.png`, alt="").topIntro__img
+          .topIntro__description
+            p.topIntro__text
+              |「ではみなさんは、そういうふうに<br>
+              |川だと云いわれたり、<br>
+              |乳の流れた<br>
+              |あとだと云われたりしていたこの<br>
+              |ぼんやりと白いものがほんとうは<br>
+              |何かご承知ですか。」
+            p.topIntro__text
+              |先生は、黒板に吊した<br>
+              |大きな黒い星座の図の、<br>
+              |上から下へ白くけぶった<br>
+              |銀河帯のようなところを指さしながら、<br>
+              |みんなに問いをかけました。
+            p.topIntro__text
+              |カムパネルラが手をあげました。<br>
+              |それから四五人手をあげました。
+            p.topIntro__text
+              |ジョバンニも手をあげようとして、<br>
+              |急いでそのままやめました。
+            a(href="#").topIntro__button more
+    section.topTrain
+      .wrap
+        .topTrain__content
+          .topTrain__box.wow.fadeInLeft
+            .topTrain__inner
+              img(src=`${path}img/icon-david.png`, alt="").topTrain__img
+              h2.topTrain__title train1
+              p.topTrain__text たしかにあれがみんな星だと、いつか雑誌で読んだのでしたが、このごろはジョバンニはまるで毎日教室でもねむく、
+          .topTrain__box.wow.fadeInRight
+            .topTrain__inner
+              img(src=`${path}img/icon-david.png`, alt="").topTrain__img
+              h2.topTrain__title train2
+              p.topTrain__text 本を読むひまも読む本もないので、なんだかどんなこともよくわからないという気持ちがするのでした。
+    section.topGiovanni
+      .wrap
+        .topGiovanni__content
+          h2.topGiovanni__title.wow.fadeInUp 「ジョバンニさん。あなたはわかっているのでしょう。」
+          p.topGiovanni__text.wow.fadeInUp
+            |ジョバンニは勢いよく立ちあがりましたが、立って見るともうはっきりと<br class="pc-only">
+            |それを答えることができないのでした。<br class="pc-only">
+            |ザネリが前の席からふりかえって、ジョバンニを見てくすっとわらいました。<br class="pc-only">
+            |ジョバンニはもうどぎまぎしてまっ赤になってしまいました。<br class="pc-only">
+            |先生がまた云いました。
+          p.topGiovanni__text.wow.fadeInUp
+            |「大きな望遠鏡で銀河をよっく調べると銀河は大体何でしょう。」<br class="pc-only">
+            |やっぱり星だとジョバンニは思いましたがこんどもすぐに答えることができま<br class="pc-only">
+            |せんでした。
+    section.topSpheres
+      .wrap
+        .topSpheres__box.wow.fadeInRight
+          .topSpheres__description
+            p.topSpheres__text 「ではカムパネルラさん。」と名指しました。するとあんなに元気に手をあげたカムパネルラ が、やはりもじもじ立ち上ったままやはり答え ができませんでした。
+            p.topSpheres__text 先生は意外なようにしばらくじっとカムパネルラを見ていましたが、急いで「では。よし。」 と云いながら、自分で星図を指さしました。
+            .topSpheres__buttonOuter
+              a(href="#").topSpheres__button more
+          .topSpheres__imgBox
+            img(src=`${path}img/earth.png`, alt="")
+        .topSpheres__box.topSpheres__box--reverse.wow.fadeInLeft
+          .topSpheres__description.topSpheres__description--reverse
+            p.topSpheres__text 「このぼんやりと白い銀河を大きないい望遠 鏡で見ますと、もうたくさんの小さな星に見 えるのです。ジョバンニさんそうでしょう。」
+            p.topSpheres__text ジョバンニはまっ赤になってうなずきました。けれどもいつかジョバンニの眼のなかには涙なみだがいっぱいになりました。
+            .topSpheres__buttonOuter.topSpheres__buttonOuter--reverse
+              a(href="#").topSpheres__button more
+          .topSpheres__imgBox.topSpheres__imgBox--reverse
+            img(src=`${path}img/moon.png`, alt="")
+    section.topSlider
+      .wrap
+        .swiper-container.wow.fadeInUp
+          .swiper-wrapper
+            .swiper-slide
+              .topSlider__content
+                img(src=`${path}img/slide-1.png`, alt="").topSlider__img
+                .topSlider__body
+                  h2.topSlider__title そうだ僕ぼくは知っていたのだ、
+                  p.topSlider__text 勿論もちろんカムパネルラも知っている、それはいつかカムパネルラのお父さんの博士のうちでカムパネルラといっしょに読んだ雑誌のなかにあったのだ。
+            .swiper-slide
+              .topSlider__content
+                img(src=`${path}img/slide-2.png`, alt="").topSlider__img
+                .topSlider__body
+                  h2.topSlider__title それどこでなくカムパネルラは、
+                  p.topSlider__text その雑誌を読むと、すぐお父さんの書斎から巨きな本をもってきて、ぎんがというところをひろげ、まっ黒な頁ページいっぱいに白い点々のある美しい写真を二人でいつまでも見たのでした。
+            .swiper-slide
+              .topSlider__content
+                img(src=`${path}img/slide-3.png`, alt="").topSlider__img
+                .topSlider__body
+                  h2.topSlider__title それをカムパネルラが
+                  p.topSlider__text 忘れる筈はずもなかったのに、すぐに返事をしなかったのは、このごろぼくが、朝にも午后にも仕事がつらく、学校に出てももうみんなともはきはき遊ばず、カムパネルラともあんまり物を云わないようになったので、
+            .swiper-slide
+              .topSlider__content
+                img(src=`${path}img/slide-1.png`, alt="").topSlider__img
+                .topSlider__body
+                  h2.topSlider__title そうだ僕ぼくは知っていたのだ、
+                  p.topSlider__text 勿論もちろんカムパネルラも知っている、それはいつかカムパネルラのお父さんの博士のうちでカムパネルラといっしょに読んだ雑誌のなかにあったのだ。
+            .swiper-slide
+              .topSlider__content
+                img(src=`${path}img/slide-2.png`, alt="").topSlider__img
+                .topSlider__body
+                  h2.topSlider__title それどこでなくカムパネルラは、
+                  p.topSlider__text その雑誌を読むと、すぐお父さんの書斎から巨きな本をもってきて、ぎんがというところをひろげ、まっ黒な頁ページいっぱいに白い点々のある美しい写真を二人でいつまでも見たのでした。
+            .swiper-slide
+              .topSlider__content
+                img(src=`${path}img/slide-3.png`, alt="").topSlider__img
+                .topSlider__body
+                  h2.topSlider__title それをカムパネルラが
+                  p.topSlider__text 忘れる筈はずもなかったのに、すぐに返事をしなかったのは、このごろぼくが、朝にも午后にも仕事がつらく、学校に出てももうみんなともはきはき遊ばず、カムパネルラともあんまり物を云わないようになったので、
+        .swiper-pagination
+  include ./_include/_footer.pug

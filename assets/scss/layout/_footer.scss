@@ -1,0 +1,30 @@
+.footer {
+  background-color: #5F5E5E;
+  text-align: center;
+  padding: 25px 0;
+
+  &__snsIcon {
+    display: inline-block;
+
+    & + & {
+      margin-left: 25px;
+    }
+
+    i {
+      display: inline-block;
+      color: #fff;
+      font-size: 40px;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__copyright {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+  }
+}

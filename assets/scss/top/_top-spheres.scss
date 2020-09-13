@@ -1,0 +1,161 @@
+.topSpheres {
+  padding-top: 260px;
+  padding-bottom: 130px;
+
+  @include mq(md) {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  &__box {
+    display: flex;
+    position: relative;
+    background-color: #013b74;
+
+    @include mq(sm) {
+      flex-direction: column-reverse;
+      position: static;
+    }
+
+    & + & {
+      margin-top: 220px;
+
+      @include mq(md) {
+        margin-top: 30px;
+      }
+    }
+
+    &--reverse {
+      flex-flow: row-reverse;
+
+      @include mq(sm) {
+        flex-flow: column-reverse;
+      }
+    }
+  }
+
+  &__description {
+    color: #fff;
+    padding-top: 90px;
+    padding-right: 440px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+
+    @include mq(md) {
+      padding-top: 50px;
+      padding-right: 50%;
+      padding-bottom: 50px;
+    }
+
+    @include mq(sm) {
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-bottom: 30px;
+      padding-left: 20px;
+    }
+
+    &--reverse {
+      padding-right: 50px;
+      padding-left: 440px;
+
+      @include mq(md) {
+        padding-left: 50%;
+      }
+
+      @include mq(sm) {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.7;
+
+    @include mq(sm) {
+      font-size: 16px;
+    }
+
+    & + & {
+      margin-top: 50px;
+
+      @include mq(sm) {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  &__buttonOuter {
+    margin-top: 50px;
+    @include mq(sm) {
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    &--reverse {
+      text-align: right;
+
+      @include mq(sm) {
+        text-align: center;
+      }
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    font-size: 17px;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 55px;
+    transition: 0.4s;
+
+    &:hover {
+      color: #013b74;
+      background-color: #fff;
+    }
+  }
+
+  &__imgBox {
+    top: -70px;
+    right: -70px;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+
+    @include mq(md) {
+      top: 50%;
+      right: 4%;
+      transform: translateY(-50%);
+      width: 315px;
+      height: 315px;
+    }
+
+    @include mq(sm) {
+      position: static;
+      top: initial;
+      right: initial;
+      transform: initial;
+      width: 100%;
+      height: 100%;
+    }
+
+    &--reverse {
+      left: -70px;
+
+      @include mq(md) {
+        top: 50%;
+        left: 4%;
+        transform: translateY(-50%);
+      }
+
+      @include mq(sm) {
+        top: initial;
+        left: initial;
+        transform: initial;
+      }
+    }
+  }
+}

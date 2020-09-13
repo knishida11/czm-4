@@ -1,0 +1,52 @@
+.topMainImg {
+  background-image: url(../img/top.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 854px;
+  text-align: center;
+  position: relative;
+
+
+  @include mq(sm) {
+    height: 600px;
+  }
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 90px;
+    line-height: 1.4444;
+    color: #fff;
+
+    @include mq(md) {
+      font-size: 60px;
+    }
+
+    @include mq(sm) {
+      font-size: 32px;
+    }
+  }
+
+  &__button {
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 28px;
+    line-height: 1;
+    padding: 10px 30px;
+    margin-top: 60px;
+    display: inline-block;
+    transition: 0.4s;
+
+    &:hover {
+      color: #333;
+      background-color: #fff;
+    }
+  }
+}
