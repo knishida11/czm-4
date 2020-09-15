@@ -1,6 +1,6 @@
 .topSpheres {
-  padding-top: 260px;
-  padding-bottom: 130px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 
   @include mq(md) {
     padding-top: 65px;
@@ -18,7 +18,7 @@
     }
 
     & + & {
-      margin-top: 220px;
+      margin-top: 125px;
 
       @include mq(md) {
         margin-top: 30px;
