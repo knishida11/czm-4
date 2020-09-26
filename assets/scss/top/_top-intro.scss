@@ -8,7 +8,7 @@
   }
 
   &__title {
-    font-size: 46px;
+    font-size: 40px;
     line-height: 1;
     text-align: center;
 
@@ -20,7 +20,7 @@
       content: '';
       display: block;
       height: 4px;
-      width: 413px;
+      width: 325px;
       background: #333;
       margin: 20px auto 0;
 
@@ -60,7 +60,7 @@
   }
 
   &__description {
-    padding-left: 95px;
+    padding-left: 7.5%;
 
     @include mq(md) {
       text-align: center;
